@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  app_name: MyString
+  package_name: MyString
+  version_name: MyString
+  version_code: 1
+  base_activity: MyString
+  top_activity: MyString
+  first_install_time: 2014-06-23 13:33:47
+  last_update_time: 2014-06-23 13:33:47
+  app_session_id: 1
+
+two:
+  app_name: MyString
+  package_name: MyString
+  version_name: MyString
+  version_code: 1
+  base_activity: MyString
+  top_activity: MyString
+  first_install_time: 2014-06-23 13:33:47
+  last_update_time: 2014-06-23 13:33:47
+  app_session_id: 1

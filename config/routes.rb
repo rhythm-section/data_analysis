@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :app_usages
+
   resources :app_sessions
 
   resources :system_settings

@@ -11,13 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623112946) do
+ActiveRecord::Schema.define(version: 20140623113347) do
 
   create_table "app_sessions", force: true do |t|
     t.datetime "app_session_timestamp_start"
     t.datetime "app_session_timestamp_end"
     t.datetime "app_session_timestamp_duration"
     t.integer  "device_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "app_usages", force: true do |t|
+    t.string   "app_name"
+    t.string   "package_name"
+    t.string   "version_name"
+    t.integer  "version_code"
+    t.string   "base_activity"
+    t.string   "top_activity"
+    t.datetime "first_install_time"
+    t.datetime "last_update_time"
+    t.integer  "app_session_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

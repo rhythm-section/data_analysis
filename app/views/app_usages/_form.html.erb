@@ -1,0 +1,53 @@
+<%= form_for(@app_usage) do |f| %>
+  <% if @app_usage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@app_usage.errors.count, "error") %> prohibited this app_usage from being saved:</h2>
+
+      <ul>
+      <% @app_usage.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :app_name %><br>
+    <%= f.text_field :app_name %>
+  </div>
+  <div class="field">
+    <%= f.label :package_name %><br>
+    <%= f.text_field :package_name %>
+  </div>
+  <div class="field">
+    <%= f.label :version_name %><br>
+    <%= f.text_field :version_name %>
+  </div>
+  <div class="field">
+    <%= f.label :version_code %><br>
+    <%= f.number_field :version_code %>
+  </div>
+  <div class="field">
+    <%= f.label :base_activity %><br>
+    <%= f.text_field :base_activity %>
+  </div>
+  <div class="field">
+    <%= f.label :top_activity %><br>
+    <%= f.text_field :top_activity %>
+  </div>
+  <div class="field">
+    <%= f.label :first_install_time %><br>
+    <%= f.datetime_select :first_install_time %>
+  </div>
+  <div class="field">
+    <%= f.label :last_update_time %><br>
+    <%= f.datetime_select :last_update_time %>
+  </div>
+  <div class="field">
+    <%= f.label :app_session_id %><br>
+    <%= f.number_field :app_session_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

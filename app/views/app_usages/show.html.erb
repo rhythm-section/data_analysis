@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>App name:</strong>
+  <%= @app_usage.app_name %>
+</p>
+
+<p>
+  <strong>Package name:</strong>
+  <%= @app_usage.package_name %>
+</p>
+
+<p>
+  <strong>Version name:</strong>
+  <%= @app_usage.version_name %>
+</p>
+
+<p>
+  <strong>Version code:</strong>
+  <%= @app_usage.version_code %>
+</p>
+
+<p>
+  <strong>Base activity:</strong>
+  <%= @app_usage.base_activity %>
+</p>
+
+<p>
+  <strong>Top activity:</strong>
+  <%= @app_usage.top_activity %>
+</p>
+
+<p>
+  <strong>First install time:</strong>
+  <%= @app_usage.first_install_time %>
+</p>
+
+<p>
+  <strong>Last update time:</strong>
+  <%= @app_usage.last_update_time %>
+</p>
+
+<p>
+  <strong>App session:</strong>
+  <%= @app_usage.app_session_id %>
+</p>
+
+<%= link_to 'Edit', edit_app_usage_path(@app_usage) %> |
+<%= link_to 'Back', app_usages_path %>
