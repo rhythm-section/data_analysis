@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623112607) do
+ActiveRecord::Schema.define(version: 20140623112946) do
 
   create_table "app_sessions", force: true do |t|
     t.datetime "app_session_timestamp_start"
@@ -40,7 +40,7 @@ ActiveRecord::Schema.define(version: 20140623112607) do
   end
 
   create_table "system_settings", force: true do |t|
-    t.string   "settings_timestamp"
+    t.datetime "settings_timestamp",                    limit: 255
     t.integer  "settings_airplane_mode"
     t.integer  "settings_bluetooth"
     t.integer  "settings_data_roaming"
