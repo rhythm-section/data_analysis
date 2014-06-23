@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Location timestamp:</strong>
+  <%= @user_location.location_timestamp %>
+</p>
+
+<p>
+  <strong>Location elapsed realtime nanos:</strong>
+  <%= @user_location.location_elapsed_realtime_nanos %>
+</p>
+
+<p>
+  <strong>Location provider:</strong>
+  <%= @user_location.location_provider %>
+</p>
+
+<p>
+  <strong>Location latitude:</strong>
+  <%= @user_location.location_latitude %>
+</p>
+
+<p>
+  <strong>Location longitude:</strong>
+  <%= @user_location.location_longitude %>
+</p>
+
+<p>
+  <strong>Location altitude:</strong>
+  <%= @user_location.location_altitude %>
+</p>
+
+<p>
+  <strong>Location speed:</strong>
+  <%= @user_location.location_speed %>
+</p>
+
+<p>
+  <strong>Location accuracy:</strong>
+  <%= @user_location.location_accuracy %>
+</p>
+
+<p>
+  <strong>Location app session:</strong>
+  <%= @user_location.location_app_session_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_location_path(@user_location) %> |
+<%= link_to 'Back', user_locations_path %>

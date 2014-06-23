@@ -1,0 +1,53 @@
+<%= form_for(@user_location) do |f| %>
+  <% if @user_location.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user_location.errors.count, "error") %> prohibited this user_location from being saved:</h2>
+
+      <ul>
+      <% @user_location.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :location_timestamp %><br>
+    <%= f.datetime_select :location_timestamp %>
+  </div>
+  <div class="field">
+    <%= f.label :location_elapsed_realtime_nanos %><br>
+    <%= f.number_field :location_elapsed_realtime_nanos %>
+  </div>
+  <div class="field">
+    <%= f.label :location_provider %><br>
+    <%= f.text_field :location_provider %>
+  </div>
+  <div class="field">
+    <%= f.label :location_latitude %><br>
+    <%= f.text_field :location_latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :location_longitude %><br>
+    <%= f.text_field :location_longitude %>
+  </div>
+  <div class="field">
+    <%= f.label :location_altitude %><br>
+    <%= f.text_field :location_altitude %>
+  </div>
+  <div class="field">
+    <%= f.label :location_speed %><br>
+    <%= f.text_field :location_speed %>
+  </div>
+  <div class="field">
+    <%= f.label :location_accuracy %><br>
+    <%= f.text_field :location_accuracy %>
+  </div>
+  <div class="field">
+    <%= f.label :location_app_session_id %><br>
+    <%= f.number_field :location_app_session_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

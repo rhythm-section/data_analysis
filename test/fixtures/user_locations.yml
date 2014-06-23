@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location_timestamp: 2014-06-23 11:48:07
+  location_elapsed_realtime_nanos: 1
+  location_provider: MyString
+  location_latitude: 1.5
+  location_longitude: 1.5
+  location_altitude: 1.5
+  location_speed: 1.5
+  location_accuracy: 1.5
+  location_app_session_id: 1
+
+two:
+  location_timestamp: 2014-06-23 11:48:07
+  location_elapsed_realtime_nanos: 1
+  location_provider: MyString
+  location_latitude: 1.5
+  location_longitude: 1.5
+  location_altitude: 1.5
+  location_speed: 1.5
+  location_accuracy: 1.5
+  location_app_session_id: 1

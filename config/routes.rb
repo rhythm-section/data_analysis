@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_locations
+
   resources :devices
 
   get 'welcome/index'
