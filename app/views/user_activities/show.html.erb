@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity timestamp:</strong>
+  <%= @user_activity.activity_timestamp %>
+</p>
+
+<p>
+  <strong>Activity name:</strong>
+  <%= @user_activity.activity_name %>
+</p>
+
+<p>
+  <strong>Activity type:</strong>
+  <%= @user_activity.activity_type %>
+</p>
+
+<p>
+  <strong>Activity confidence:</strong>
+  <%= @user_activity.activity_confidence %>
+</p>
+
+<p>
+  <strong>Device:</strong>
+  <%= @user_activity.device_id %>
+</p>
+
+<%= link_to 'Edit', edit_user_activity_path(@user_activity) %> |
+<%= link_to 'Back', user_activities_path %>

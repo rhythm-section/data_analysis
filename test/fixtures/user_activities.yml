@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  activity_timestamp: 2014-06-23 12:54:11
+  activity_name: MyString
+  activity_type: 1
+  activity_confidence: 1
+  device_id: 1
+
+two:
+  activity_timestamp: 2014-06-23 12:54:11
+  activity_name: MyString
+  activity_type: 1
+  activity_confidence: 1
+  device_id: 1

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623094807) do
+ActiveRecord::Schema.define(version: 20140623105411) do
 
   create_table "devices", force: true do |t|
     t.string   "user_name"
@@ -27,6 +27,16 @@ ActiveRecord::Schema.define(version: 20140623094807) do
     t.integer  "user_locations"
     t.integer  "user_activities"
     t.integer  "app_sessions"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_activities", force: true do |t|
+    t.datetime "activity_timestamp"
+    t.string   "activity_name"
+    t.integer  "activity_type"
+    t.integer  "activity_confidence"
+    t.integer  "device_id"
+    t.datetime "created_at"
     t.datetime "updated_at"
   end
 
