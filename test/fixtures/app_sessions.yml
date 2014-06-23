@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  app_session_timestamp_start: 2014-06-23 13:26:07
+  app_session_timestamp_end: 2014-06-23 13:26:07
+  app_session_timestamp_duration: 2014-06-23 13:26:07
+  device_id: 1
+
+two:
+  app_session_timestamp_start: 2014-06-23 13:26:07
+  app_session_timestamp_end: 2014-06-23 13:26:07
+  app_session_timestamp_duration: 2014-06-23 13:26:07
+  device_id: 1

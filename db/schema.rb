@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623111109) do
+ActiveRecord::Schema.define(version: 20140623112607) do
+
+  create_table "app_sessions", force: true do |t|
+    t.datetime "app_session_timestamp_start"
+    t.datetime "app_session_timestamp_end"
+    t.datetime "app_session_timestamp_duration"
+    t.integer  "device_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "devices", force: true do |t|
     t.string   "user_name"
