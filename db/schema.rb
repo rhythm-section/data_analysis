@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623105903) do
+ActiveRecord::Schema.define(version: 20140623111109) do
 
   create_table "devices", force: true do |t|
     t.string   "user_name"
@@ -27,6 +27,32 @@ ActiveRecord::Schema.define(version: 20140623105903) do
     t.integer  "user_locations"
     t.integer  "user_activities"
     t.integer  "app_sessions"
+    t.datetime "updated_at"
+  end
+
+  create_table "system_settings", force: true do |t|
+    t.string   "settings_timestamp"
+    t.integer  "settings_airplane_mode"
+    t.integer  "settings_bluetooth"
+    t.integer  "settings_data_roaming"
+    t.integer  "settings_development_settings_enabled"
+    t.string   "settings_http_proxy"
+    t.string   "settings_mode_ringer"
+    t.string   "settings_volume_alarm"
+    t.string   "settings_volume_music"
+    t.string   "settings_volume_notification"
+    t.string   "settings_volume_ring"
+    t.string   "settings_volume_system"
+    t.string   "settings_volume_voice"
+    t.string   "settings_network_preference"
+    t.string   "settings_stay_on_while_plugged_in"
+    t.integer  "settings_usb_mass_storage_enabled"
+    t.integer  "settings_wifi"
+    t.string   "settings_wifi_ssid"
+    t.string   "settings_location_mode_3"
+    t.integer  "settings_location_mode_17"
+    t.integer  "device_id"
+    t.datetime "created_at"
     t.datetime "updated_at"
   end
 

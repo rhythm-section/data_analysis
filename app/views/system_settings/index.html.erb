@@ -1,0 +1,65 @@
+<h1>Listing system_settings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Settings timestamp</th>
+      <th>Settings airplane mode</th>
+      <th>Settings bluetooth</th>
+      <th>Settings data roaming</th>
+      <th>Settings development settings enabled</th>
+      <th>Settings http proxy</th>
+      <th>Settings mode ringer</th>
+      <th>Settings volume alarm</th>
+      <th>Settings volume music</th>
+      <th>Settings volume notification</th>
+      <th>Settings volume ring</th>
+      <th>Settings volume system</th>
+      <th>Settings volume voice</th>
+      <th>Settings network preference</th>
+      <th>Settings stay on while plugged in</th>
+      <th>Settings usb mass storage enabled</th>
+      <th>Settings wifi</th>
+      <th>Settings wifi ssid</th>
+      <th>Settings location mode 3</th>
+      <th>Settings location mode 17</th>
+      <th>Device</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @system_settings.each do |system_setting| %>
+      <tr>
+        <td><%= system_setting.settings_timestamp %></td>
+        <td><%= system_setting.settings_airplane_mode %></td>
+        <td><%= system_setting.settings_bluetooth %></td>
+        <td><%= system_setting.settings_data_roaming %></td>
+        <td><%= system_setting.settings_development_settings_enabled %></td>
+        <td><%= system_setting.settings_http_proxy %></td>
+        <td><%= system_setting.settings_mode_ringer %></td>
+        <td><%= system_setting.settings_volume_alarm %></td>
+        <td><%= system_setting.settings_volume_music %></td>
+        <td><%= system_setting.settings_volume_notification %></td>
+        <td><%= system_setting.settings_volume_ring %></td>
+        <td><%= system_setting.settings_volume_system %></td>
+        <td><%= system_setting.settings_volume_voice %></td>
+        <td><%= system_setting.settings_network_preference %></td>
+        <td><%= system_setting.settings_stay_on_while_plugged_in %></td>
+        <td><%= system_setting.settings_usb_mass_storage_enabled %></td>
+        <td><%= system_setting.settings_wifi %></td>
+        <td><%= system_setting.settings_wifi_ssid %></td>
+        <td><%= system_setting.settings_location_mode_3 %></td>
+        <td><%= system_setting.settings_location_mode_17 %></td>
+        <td><%= system_setting.device_id %></td>
+        <td><%= link_to 'Show', system_setting %></td>
+        <td><%= link_to 'Edit', edit_system_setting_path(system_setting) %></td>
+        <td><%= link_to 'Destroy', system_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New System setting', new_system_setting_path %>

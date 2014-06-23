@@ -1,0 +1,101 @@
+<%= form_for(@system_setting) do |f| %>
+  <% if @system_setting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@system_setting.errors.count, "error") %> prohibited this system_setting from being saved:</h2>
+
+      <ul>
+      <% @system_setting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :settings_timestamp %><br>
+    <%= f.text_field :settings_timestamp %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_airplane_mode %><br>
+    <%= f.number_field :settings_airplane_mode %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_bluetooth %><br>
+    <%= f.number_field :settings_bluetooth %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_data_roaming %><br>
+    <%= f.number_field :settings_data_roaming %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_development_settings_enabled %><br>
+    <%= f.number_field :settings_development_settings_enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_http_proxy %><br>
+    <%= f.text_field :settings_http_proxy %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_mode_ringer %><br>
+    <%= f.text_field :settings_mode_ringer %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_volume_alarm %><br>
+    <%= f.text_field :settings_volume_alarm %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_volume_music %><br>
+    <%= f.text_field :settings_volume_music %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_volume_notification %><br>
+    <%= f.text_field :settings_volume_notification %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_volume_ring %><br>
+    <%= f.text_field :settings_volume_ring %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_volume_system %><br>
+    <%= f.text_field :settings_volume_system %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_volume_voice %><br>
+    <%= f.text_field :settings_volume_voice %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_network_preference %><br>
+    <%= f.text_field :settings_network_preference %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_stay_on_while_plugged_in %><br>
+    <%= f.text_field :settings_stay_on_while_plugged_in %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_usb_mass_storage_enabled %><br>
+    <%= f.number_field :settings_usb_mass_storage_enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_wifi %><br>
+    <%= f.number_field :settings_wifi %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_wifi_ssid %><br>
+    <%= f.text_field :settings_wifi_ssid %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_location_mode_3 %><br>
+    <%= f.text_field :settings_location_mode_3 %>
+  </div>
+  <div class="field">
+    <%= f.label :settings_location_mode_17 %><br>
+    <%= f.number_field :settings_location_mode_17 %>
+  </div>
+  <div class="field">
+    <%= f.label :device_id %><br>
+    <%= f.number_field :device_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

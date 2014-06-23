@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  settings_timestamp: MyString
+  settings_airplane_mode: 1
+  settings_bluetooth: 1
+  settings_data_roaming: 1
+  settings_development_settings_enabled: 1
+  settings_http_proxy: MyString
+  settings_mode_ringer: MyString
+  settings_volume_alarm: MyString
+  settings_volume_music: MyString
+  settings_volume_notification: MyString
+  settings_volume_ring: MyString
+  settings_volume_system: MyString
+  settings_volume_voice: MyString
+  settings_network_preference: MyString
+  settings_stay_on_while_plugged_in: MyString
+  settings_usb_mass_storage_enabled: 1
+  settings_wifi: 1
+  settings_wifi_ssid: MyString
+  settings_location_mode_3: MyString
+  settings_location_mode_17: 1
+  device_id: 1
+
+two:
+  settings_timestamp: MyString
+  settings_airplane_mode: 1
+  settings_bluetooth: 1
+  settings_data_roaming: 1
+  settings_development_settings_enabled: 1
+  settings_http_proxy: MyString
+  settings_mode_ringer: MyString
+  settings_volume_alarm: MyString
+  settings_volume_music: MyString
+  settings_volume_notification: MyString
+  settings_volume_ring: MyString
+  settings_volume_system: MyString
+  settings_volume_voice: MyString
+  settings_network_preference: MyString
+  settings_stay_on_while_plugged_in: MyString
+  settings_usb_mass_storage_enabled: 1
+  settings_wifi: 1
+  settings_wifi_ssid: MyString
+  settings_location_mode_3: MyString
+  settings_location_mode_17: 1
+  device_id: 1
