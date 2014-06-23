@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_name: MyString
+  mongo_id: MyString
+  uuid: MyString
+  android_id: MyString
+  created_at: 2014-06-23 11:41:13
+  os_version: MyString
+  model: MyString
+  product: MyString
+  manufacturer: MyString
+  brand: MyString
+  user_locations: 1
+  user_activities: 1
+  app_sessions: 1
+
+two:
+  user_name: MyString
+  mongo_id: MyString
+  uuid: MyString
+  android_id: MyString
+  created_at: 2014-06-23 11:41:13
+  os_version: MyString
+  model: MyString
+  product: MyString
+  manufacturer: MyString
+  brand: MyString
+  user_locations: 1
+  user_activities: 1
+  app_sessions: 1

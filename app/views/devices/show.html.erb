@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User name:</strong>
+  <%= @device.user_name %>
+</p>
+
+<p>
+  <strong>Mongo:</strong>
+  <%= @device.mongo_id %>
+</p>
+
+<p>
+  <strong>Uuid:</strong>
+  <%= @device.uuid %>
+</p>
+
+<p>
+  <strong>Android:</strong>
+  <%= @device.android_id %>
+</p>
+
+<p>
+  <strong>Created at:</strong>
+  <%= @device.created_at %>
+</p>
+
+<p>
+  <strong>Os version:</strong>
+  <%= @device.os_version %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @device.model %>
+</p>
+
+<p>
+  <strong>Product:</strong>
+  <%= @device.product %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @device.manufacturer %>
+</p>
+
+<p>
+  <strong>Brand:</strong>
+  <%= @device.brand %>
+</p>
+
+<p>
+  <strong>User locations:</strong>
+  <%= @device.user_locations %>
+</p>
+
+<p>
+  <strong>User activities:</strong>
+  <%= @device.user_activities %>
+</p>
+
+<p>
+  <strong>App sessions:</strong>
+  <%= @device.app_sessions %>
+</p>
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>
