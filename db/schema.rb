@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140623113347) do
+ActiveRecord::Schema.define(version: 20140623193356) do
 
   create_table "app_sessions", force: true do |t|
     t.datetime "app_session_timestamp_start"
@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(version: 20140623113347) do
     t.integer  "device_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "settings_app_session_id"
   end
 
   create_table "user_activities", force: true do |t|

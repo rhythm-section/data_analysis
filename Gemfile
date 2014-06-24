@@ -13,6 +13,9 @@ gem 'bourbon'
 gem 'foundation-rails'
 # d3.js
 gem 'd3-rails'
+# bulk insert for active record
+gem 'activerecord-import', '>= 0.4.0'
+gem 'htmlentities'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
